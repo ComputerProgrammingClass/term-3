@@ -1,3 +1,16 @@
+class Shape:
+    def __init__(self):
+        self.width = 10
+        self.height = 10
+        pass
+
+    def area(self):
+        return self.width * self.height
+
+
+Shape().area()
+
+
 class Person:
     def __init__(self, name, age):
         # self refers to the object that is created with this class
@@ -12,7 +25,7 @@ class Person:
 my_teacher = Person("Poon", 32)
 
 # my_teacher uses a method called "introduce()"
-my_teacher.introduce()
+# my_teacher.introduce()
 
 # my_teacher's property of "name" is accessed
 print(f"My teacher's name is Mr. {my_teacher.name}")
